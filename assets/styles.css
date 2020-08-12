@@ -386,7 +386,7 @@ a {
         float: right;
         border-radius: 50%;
         margin-left: 5%;
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .intro {
@@ -591,11 +591,12 @@ a {
 
     .headshot {
         display: block;
-        padding-top: 5%;
+        margin-top: 5%;
         float: none;
         margin-left: 0;
         margin-right: 0;
         width: 30%;
+        min-width: 150px;
     }
 
     .burgerNav {
