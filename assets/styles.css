@@ -106,15 +106,15 @@ html {
 }
 
 .burgerOpenToggle .bar1 {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(23deg);
+    transform: rotate(23deg);
 }
 
 .burgerOpenToggle .bar2 {opacity: 0;}
 
 .burgerOpenToggle .bar3 {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(-23deg);
+    transform: rotate(-23deg);
 }
 
 .burgerOpenToggle .burgerHeader {
@@ -465,6 +465,16 @@ a {
     .header {
         height: 310px;
     }
+
+    .burgerOpenToggle .bar1 {
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    
+    .burgerOpenToggle .bar3 {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -496,10 +506,6 @@ a {
         text-align: right;
     }
 
-    .intro {
-        padding-top: 10%;
-    }
-
     .socialIcon {
         margin-right: 4px;
     }
@@ -507,10 +513,17 @@ a {
     .intro {
         font-size: 29px;
         padding-top: 6%;
+        width: 100%;
     }
 
-    .intro {
-        width: 100%;
+    .burgerOpenToggle .bar1 {
+        -webkit-transform: rotate(28deg);
+        transform: rotate(28deg);
+    }
+    
+    .burgerOpenToggle .bar3 {
+        -webkit-transform: rotate(-28deg);
+        transform: rotate(-28deg);
     }
 }
 
@@ -536,6 +549,17 @@ a {
 
     .headshot {
         margin-bottom: 2%;
+    }
+
+    
+    .burgerOpenToggle .bar1 {
+        -webkit-transform: rotate(23deg);
+        transform: rotate(23deg);
+    }
+    
+    .burgerOpenToggle .bar3 {
+        -webkit-transform: rotate(-23deg);
+        transform: rotate(-23deg);
     }
 }
 
@@ -628,10 +652,31 @@ a {
     .socialIcon {
         margin-right: 10px;
     }
+
+    .burgerOpenToggle .bar1 {
+        -webkit-transform: rotate(21deg);
+        transform: rotate(21deg);
+    }
+    
+    .burgerOpenToggle .bar3 {
+        -webkit-transform: rotate(-21deg);
+        transform: rotate(-21deg);
+    }
 } 
 
 @media screen and (max-width: 385px) {
+    
     .burgerNav {
         font-size: 26px;
+    }
+
+    .burgerOpenToggle .bar1 {
+        -webkit-transform: rotate(23deg);
+        transform: rotate(23deg);
+    }
+    
+    .burgerOpenToggle .bar3 {
+        -webkit-transform: rotate(-23deg);
+        transform: rotate(-23deg);
     }
 }
