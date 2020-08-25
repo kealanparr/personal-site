@@ -230,6 +230,10 @@ a {
     cursor: pointer;
 }
 
+.fccPanel {
+    background-color: #006401 !important;
+}
+
 .position {
     font-size: 18px;
     width: 100%;
