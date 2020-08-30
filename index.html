@@ -6,14 +6,14 @@
   <title>Kealan Parr</title>
   <link rel="icon" type="image/png" href="assets/misc/icon.svg" sizes="16x16">
   <link href="assets/styles.css" rel="stylesheet">
+  <script async src="assets/index.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 <!-- I ideally would like to call this about.html, but Netlify need a file to be called index.html 🤔🤔🤔 -->
 <body onload="window.scrollTo(0,0);">
   <div class="header noSelect">
-    <div class="container noSelect"
-      onclick="this.classList.toggle('burgerOpenToggle'); document.getElementsByClassName('burgerNavHeader')[0].classList.toggle('burgerOpenToggle')">
+    <div class="container noSelect" onclick="burgerNav(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -70,8 +70,8 @@
     <h3 class="rowHeader">Recent work</h3>
     <div class="rowHeader">
       <section class="row">
-        <div class="item">
-          <div class="panel ">
+        <div class="item" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')">
+          <div class="panel">
             <img alt="" class="whitePanel" src="assets/panels/pathfinders.jpg">
           </div>
           <div>
@@ -79,8 +79,8 @@
             <p class="panelDescription">I visualised Conway's Game of Life & implemented two path finding algorithms.</p>
           </div>
         </div>
-        <div class="item">
-          <div class="panel ">
+        <div class="item" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')">
+          <div class="panel">
             <img alt="" class="whitePanel" src="assets/panels/dino.png">
           </div>
           <div>
@@ -93,7 +93,7 @@
     <h3 class="rowHeader">Experience</h3>
     <div class="rowHeader">
       <section class="row">
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.bet365.com/#/HO/')">
           <div class="panel bet365Panel">
             <div class="bet365"></div>
           </div>
@@ -106,7 +106,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="panel ">
+          <div class="panel">
             <img alt="" class="whitePanel" src="assets/panels/kite.png">
           </div>
           <div>
@@ -122,7 +122,7 @@
     </div>
     <div class="rowHeader">
       <section class="row">
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.fdmgroup.com/')">
           <div class="panel">
             <img class="panel fdm" src="assets/panels/fdm.jpg" loading="lazy" alt="FDM Group Logo" width="283" height="213">
           </div>
@@ -151,7 +151,7 @@
     <h3 class="rowHeader">Education</h3>
     <div class="rowHeader">
       <section class="row">
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.mmu.ac.uk/')">
           <div class="panel ">
             <img class="whitePanel" src="assets/panels/mmu.png" loading="lazy" alt="MMU logo" width="200" height="110">
           </div>
@@ -161,7 +161,7 @@
             <p class="panelDescription">First class honours</p>
           </div>
         </div>
-        <div class="item">
+        <div class="item" onclick="panelNav('https://northcoders.com/')">
           <div class="panel  northCodersCenter">
             <img class="panel" src="assets/panels/northCoders.png" loading="lazy" alt="northCoders logo" width="200">
           </div>
@@ -176,7 +176,7 @@
     <h3 class="rowHeader">Successes</h3>
     <div class="rowHeader">
       <section class="row">
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.empiregrapplingevents.com/')">
           <div class="panel ">
             <img class="whitePanel" src="assets/panels/empire.png" loading="lazy" alt="northCoders logo" width="200" height="110">
           </div>
@@ -186,7 +186,7 @@
             <p class="panelDescription">Gold</p>
           </div>
         </div>
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.royalnavy.mod.uk/our-organisation/bases-and-stations/training-establishments/university-royal-naval-units')">
           <div class="navyPanel">
             <img alt="" class="whitePanel" loading="lazy" src="assets/panels/navy.png">
           </div>
@@ -203,7 +203,7 @@
     <h3 class="rowHeader">Certificates</h3>
     <div class="rowHeader">
       <section class="row">
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/responsive-web-design')">
           <div class="fccPanel navyPanel">
             <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110">
           </div>
@@ -213,7 +213,7 @@
             <p class="panelDescription">Completion of the course representing around 300hrs work</p>
           </div>
         </div>
-        <div class="item">
+        <div class="item" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/javascript-algorithms-and-data-structures')">
           <div class="fccPanel navyPanel">
             <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110">
           </div>
