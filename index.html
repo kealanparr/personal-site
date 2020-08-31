@@ -12,8 +12,8 @@
 
 <!-- I ideally would like to call this about.html, but Netlify need a file to be called index.html 🤔🤔🤔 -->
 <body onload="window.scrollTo(0,0);">
-  <div class="header noDrag">
-    <div class="container noDrag" onclick="burgerNav(this)">
+  <div class="header">
+    <div class="container" onclick="burgerNav(this)">
       <div class="topBar"></div>
       <div class="middleBar"></div>
       <div class="bottomBar"></div>
@@ -23,34 +23,34 @@
         <a class="burgerNav" href="https://kealanparr.dev/">Blog</a>
       </li>
     </ul>
-    <header class="inner">
+    <header class="inner noDrag">
       <img src="assets/misc/kealan.jpg" alt="Headshot of Kealan" class="headshot">
       <h1 class="intro">Hi, I'm Kealan Parr.</h1>
       <div class="footer">
         <ul>
           <!-- Email-->
           <li class="socialIcon">
-            <a class="email iconLink noDrag" href="mailto:kea_parr@hotmail.co.uk" target="_blank"></a>
+            <a class="email iconLink" href="mailto:kea_parr@hotmail.co.uk" target="_blank"></a>
           </li>
           <!-- CV-->
           <li class="socialIcon">
-            <a class="cv iconLink noDrag" href="assets/misc/KealanParrCV.pdf" target="_blank"></a>
+            <a class="cv iconLink" href="assets/misc/KealanParrCV.pdf" target="_blank"></a>
           </li>
           <!-- Twitter-->
           <li class="socialIcon">
-            <a class="twitter iconLink noDrag" href="https://twitter.com/kealanprograms" target="_blank"></a>
+            <a class="twitter iconLink" href="https://twitter.com/kealanprograms" target="_blank"></a>
           </li>
           <!-- GitHub-->
           <li class="socialIcon">
-            <a class="github iconLink noDrag" href="https://github.com/AnonymousRepositoryStuff" target="_blank"></a>
+            <a class="github iconLink" href="https://github.com/AnonymousRepositoryStuff" target="_blank"></a>
           </li>
           <!-- CodeWars-->
           <li class="socialIcon">
-            <a class="codewars iconLink noDrag" href="https://www.codewars.com/users/KeaParr" target="_blank"></a>
+            <a class="codewars iconLink" href="https://www.codewars.com/users/KeaParr" target="_blank"></a>
           </li>
           <!-- LeetCode-->
           <li class="socialIcon">
-            <a class="leetcode iconLink noDrag" href="https://leetcode.com/anonprogramman/" target="_blank"></a>
+            <a class="leetcode iconLink" href="https://leetcode.com/anonprogramman/" target="_blank"></a>
           </li>
         </ul>
       </div>
@@ -58,7 +58,7 @@
   </div>
   <nav class="navContainer">
     <ul>
-      <li class="headerNav">
+      <li class="navHeader">
         <a class="nav" href="https://kealanparr.dev/">
           Blog
         </a>
