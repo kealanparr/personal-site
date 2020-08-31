@@ -168,7 +168,7 @@ a {
     margin-left: 38%;
 }
 
-.main {
+.content {
     position: relative;
     display: block;
     margin-left: 35%;
@@ -186,7 +186,10 @@ a {
 }
 
 .row {
+    font-size: 3.3em;
+    margin-bottom: 50px;
     width: 100%;
+    float: left;
 }
 
 .rowHeader {
@@ -308,7 +311,7 @@ a {
     padding-bottom: 15%;
 }
 
-.container {
+.burgerContainer {
     display: none;
     pointer-events: none;
 }
@@ -336,7 +339,7 @@ a {
         margin-left: 4%;
     }
 
-    .container {
+    .burgerContainer {
         display: inline-block;
         margin-top: 6%;
         margin-left: 5%;
@@ -360,7 +363,7 @@ a {
         display: none;
     }
 
-    .main {
+    .content {
         margin-left: 3%;
         width: 97%;
     }
@@ -564,7 +567,7 @@ a {
         margin-left: 5%;
     }
 
-    .main {
+    .content {
         margin-left: 0%;
         width: 100%;
         padding-left: 0;

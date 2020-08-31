@@ -13,7 +13,7 @@
 <!-- I ideally would like to call this about.html, but Netlify need a file to be called index.html 🤔🤔🤔 -->
 <body onload="window.scrollTo(0,0);">
   <div class="header">
-    <div class="container" onclick="burgerNav(this)">
+    <div class="burgerContainer" onclick="burgerNav(this)">
       <div class="topBar"></div>
       <div class="middleBar"></div>
       <div class="bottomBar"></div>
@@ -65,34 +65,34 @@
       </li>
     </ul>
   </nav>
-  <main class="main">
+  <main class="content">
     <h2 class="workStatement">Software Engineer working on mobile, web and iOS.</h2>
     <h3 class="rowHeader">Recent work</h3>
-      <section class="row rowHeader">
-        <div class="item">
-          <div class="panel">
-            <img alt="" class="whitePanel" src="assets/panels/pathfinders.jpg" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')">
-          </div>
-          <div>
-            <p class="panelHeader">Grid based algorithms.</p>
-            <p class="panelDescription">I visualised Conway's Game of Life & implemented two path finding algorithms.</p>
-          </div>
+    <section class="row">
+      <div class="item">
+        <div class="panel">
+          <img alt="" class="whitePanel" src="assets/panels/pathfinders.jpg" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')">
         </div>
-        <div class="item">
-          <div class="panel">
-            <img alt="" class="whitePanel" src="assets/panels/dino.png" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')">
-          </div>
-          <div>
-            <p class="panelHeader">Chrome Dino script</p>
-            <p class="panelDescription">A basic automation script I made for the chrome dino offline game</p>
-          </div>
+        <div>
+          <p class="panelHeader">Grid based algorithms.</p>
+          <p class="panelDescription">I visualised Conway's Game of Life & implemented two path finding algorithms.</p>
         </div>
-      </section>
+      </div>
+      <div class="item">
+        <div class="panel">
+          <img alt="" class="whitePanel" src="assets/panels/dino.png" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')">
+        </div>
+        <div>
+          <p class="panelHeader">Chrome Dino script</p>
+          <p class="panelDescription">A basic automation script I made for the chrome dino offline game</p>
+        </div>
+      </div>
+    </section>
     <h3 class="rowHeader">Experience</h3>
-      <section class="row rowHeader">
+      <section class="row">
         <div class="item">
           <div class="panel">
-            <div class="bet365" onclick="panelNav('https://www.bet365.com/#/HO/')"></div>
+            <img alt="" class="bet365" onclick="panelNav('https://www.bet365.com/#/HO/')"></img>
           </div>
           <div>
             <p class="panelHeader">bet365</p>
@@ -116,8 +116,7 @@
           </div>
         </div>
       </section>
-    <div class="rowHeader">
-      <section class="row rowHeader">
+      <section class="row">
         <div class="item">
           <div class="panel">
             <img class="panel fdm" src="assets/panels/fdm.jpg" loading="lazy" alt="FDM Group Logo" width="283" height="213" onclick="panelNav('https://www.fdmgroup.com/')">
@@ -143,11 +142,10 @@
           </div>
         </div>
       </section>
-    </div>
     <h3 class="rowHeader">Education</h3>
-      <section class="row rowHeader">
+      <section class="row">
         <div class="item">
-          <div class="panel ">
+          <div class="panel">
             <img class="whitePanel" src="assets/panels/mmu.png" loading="lazy" alt="MMU logo" width="200" height="110" onclick="panelNav('https://www.mmu.ac.uk/')">
           </div>
           <div>
@@ -168,7 +166,7 @@
         </div>
       </section>
     <h3 class="rowHeader">Successes</h3>
-      <section class="row rowHeader">
+      <section class="row">
         <div class="item" >
           <div class="panel">
             <img class="whitePanel" src="assets/panels/empire.png" loading="lazy" alt="northCoders logo" width="200" height="110" onclick="panelNav('https://www.empiregrapplingevents.com/')">
@@ -193,7 +191,7 @@
         </div>
       </section>
     <h3 class="rowHeader">Certificates</h3>
-      <section class="row rowHeader">
+      <section class="row">
         <div class="item">
           <div class="panel" id="fccPanel">
             <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/responsive-web-design')">
