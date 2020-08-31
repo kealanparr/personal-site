@@ -36,7 +36,7 @@ a {
 
 /* ------------------------- CSS RESET ------------------------- */
 
-.footer {
+.contact {
     float: right;
 }
 
@@ -493,7 +493,7 @@ a {
         font-size: 20px;
     }
 
-    .intro, .footer {
+    .intro, .contact {
         float: none;
         text-align: right;
     }
@@ -624,7 +624,7 @@ a {
         padding: 0 0 0 0;
     }
 
-    .footer {
+    .contact {
         text-align: center;
     }
 
