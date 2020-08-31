@@ -1,5 +1,5 @@
 /* ------------------------- CSS RESET ------------------------- */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,main,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -321,6 +321,7 @@ a {
     color: #fff;
     display: inline-block;
     font-size: 50px;
+    padding-bottom: 15%;
 }
 
 .burgerHeader {
@@ -414,10 +415,6 @@ a {
     .bar1, .bar2, .bar3 {
         width: 80px;
         height: 5px;
-    }
-
-    .burgerNav {
-        font-size: 40px;
     }
 
     .burgerNavHeader {
@@ -627,10 +624,6 @@ a {
         min-width: 150px;
     }
 
-    .burgerNav {
-        font-size: 35px;
-    }
-
     .intro {
         display: none;
     }
@@ -669,10 +662,6 @@ a {
 } 
 
 @media screen and (max-width: 385px) {
-    
-    .burgerNav {
-        font-size: 26px;
-    }
 
     .burgerOpenToggle .bar1 {
         -webkit-transform: rotate(23deg);
