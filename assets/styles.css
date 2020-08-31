@@ -38,11 +38,7 @@ html {
 
 .socialIcon {
     display: inline;
-    margin-right: 18px;
-}
-
-.lastSocialIcon {
-    display: inline;
+    margin-left: 18px;
 }
 
 .iconLink::before {
@@ -97,7 +93,7 @@ html {
 
 /* PASSED QA */
 
-.bar1, .bar2, .bar3 {
+.topBar, .middleBar, .bottomBar {
     width: 100px;
     height: 5px;
     background-color: #fff;
@@ -105,14 +101,14 @@ html {
     transition: 0.4s;
 }
 
-.burgerOpenToggle .bar1 {
+.burgerOpenToggle .topBar {
     -webkit-transform: rotate(23deg);
     transform: rotate(23deg);
 }
 
-.burgerOpenToggle .bar2 {opacity: 0;}
+.burgerOpenToggle .middleBar {opacity: 0;}
 
-.burgerOpenToggle .bar3 {
+.burgerOpenToggle .bottomBar {
     -webkit-transform: rotate(-23deg);
     transform: rotate(-23deg);
 }
@@ -132,7 +128,7 @@ html {
 /* PASSED QA */
 
 /* I included this because I hate on a click and drag everything highlights blue. Personal pref, but it drives me doolally */
-.noSelect {
+.noDrag {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -412,7 +408,7 @@ a {
 }
 
 @media screen and (max-width: 830px) {
-    .bar1, .bar2, .bar3 {
+    .topBar, .middleBar, .bottomBar {
         width: 80px;
         height: 5px;
     }
@@ -467,12 +463,12 @@ a {
         height: 310px;
     }
 
-    .burgerOpenToggle .bar1 {
+    .burgerOpenToggle .topBar {
         -webkit-transform: rotate(30deg);
         transform: rotate(30deg);
     }
     
-    .burgerOpenToggle .bar3 {
+    .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-30deg);
         transform: rotate(-30deg);
     }
@@ -517,12 +513,12 @@ a {
         width: 100%;
     }
 
-    .burgerOpenToggle .bar1 {
+    .burgerOpenToggle .topBar {
         -webkit-transform: rotate(28deg);
         transform: rotate(28deg);
     }
     
-    .burgerOpenToggle .bar3 {
+    .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-28deg);
         transform: rotate(-28deg);
     }
@@ -539,7 +535,7 @@ a {
 
     }
 
-    .bar1, .bar2, .bar3 {
+    .topBar, .middleBar, .bottomBar {
         width: 50px;
         margin: 5px 0;
     }
@@ -553,12 +549,12 @@ a {
     }
 
     
-    .burgerOpenToggle .bar1 {
+    .burgerOpenToggle .topBar {
         -webkit-transform: rotate(23deg);
         transform: rotate(23deg);
     }
     
-    .burgerOpenToggle .bar3 {
+    .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-23deg);
         transform: rotate(-23deg);
     }
@@ -650,12 +646,12 @@ a {
         margin-right: 10px;
     }
 
-    .burgerOpenToggle .bar1 {
+    .burgerOpenToggle .topBar {
         -webkit-transform: rotate(21deg);
         transform: rotate(21deg);
     }
     
-    .burgerOpenToggle .bar3 {
+    .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-21deg);
         transform: rotate(-21deg);
     }
@@ -663,12 +659,12 @@ a {
 
 @media screen and (max-width: 385px) {
 
-    .burgerOpenToggle .bar1 {
+    .burgerOpenToggle .topBar {
         -webkit-transform: rotate(23deg);
         transform: rotate(23deg);
     }
     
-    .burgerOpenToggle .bar3 {
+    .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-23deg);
         transform: rotate(-23deg);
     }

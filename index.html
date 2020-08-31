@@ -12,11 +12,11 @@
 
 <!-- I ideally would like to call this about.html, but Netlify need a file to be called index.html 🤔🤔🤔 -->
 <body onload="window.scrollTo(0,0);">
-  <div class="header noSelect">
-    <div class="container noSelect" onclick="burgerNav(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+  <div class="header noDrag">
+    <div class="container noDrag" onclick="burgerNav(this)">
+      <div class="topBar"></div>
+      <div class="middleBar"></div>
+      <div class="bottomBar"></div>
     </div>
     <ul class="burgerNavHeader">
       <li class="burgerHeader">
@@ -30,27 +30,27 @@
         <ul>
           <!-- Email-->
           <li class="socialIcon">
-            <a class="email iconLink noSelect" href="mailto:kea_parr@hotmail.co.uk" target="_blank"></a>
+            <a class="email iconLink noDrag" href="mailto:kea_parr@hotmail.co.uk" target="_blank"></a>
           </li>
           <!-- CV-->
           <li class="socialIcon">
-            <a class="cv iconLink noSelect" href="assets/misc/KealanParrCV.pdf" target="_blank"></a>
+            <a class="cv iconLink noDrag" href="assets/misc/KealanParrCV.pdf" target="_blank"></a>
           </li>
           <!-- Twitter-->
           <li class="socialIcon">
-            <a class="twitter iconLink noSelect" href="https://twitter.com/kealanprograms" target="_blank"></a>
+            <a class="twitter iconLink noDrag" href="https://twitter.com/kealanprograms" target="_blank"></a>
           </li>
           <!-- GitHub-->
           <li class="socialIcon">
-            <a class="github iconLink noSelect" href="https://github.com/AnonymousRepositoryStuff" target="_blank"></a>
+            <a class="github iconLink noDrag" href="https://github.com/AnonymousRepositoryStuff" target="_blank"></a>
           </li>
           <!-- CodeWars-->
           <li class="socialIcon">
-            <a class="codewars iconLink noSelect" href="https://www.codewars.com/users/KeaParr" target="_blank"></a>
+            <a class="codewars iconLink noDrag" href="https://www.codewars.com/users/KeaParr" target="_blank"></a>
           </li>
           <!-- LeetCode-->
-          <li class="lastSocialIcon">
-            <a class="leetcode iconLink noSelect" href="https://leetcode.com/anonprogramman/" target="_blank"></a>
+          <li class="socialIcon">
+            <a class="leetcode iconLink noDrag" href="https://leetcode.com/anonprogramman/" target="_blank"></a>
           </li>
         </ul>
       </div>
@@ -68,20 +68,19 @@
   <main class="main">
     <h2 class="workStatement">Software Engineer working on mobile, web and iOS.</h2>
     <h3 class="rowHeader">Recent work</h3>
-    <div class="rowHeader">
-      <section class="row">
-        <div class="item" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')">
+      <section class="row rowHeader">
+        <div class="item">
           <div class="panel">
-            <img alt="" class="whitePanel" src="assets/panels/pathfinders.jpg">
+            <img alt="" class="whitePanel" src="assets/panels/pathfinders.jpg" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')">
           </div>
           <div>
             <p class="panelHeader">Grid based algorithms.</p>
             <p class="panelDescription">I visualised Conway's Game of Life & implemented two path finding algorithms.</p>
           </div>
         </div>
-        <div class="item" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')">
+        <div class="item">
           <div class="panel">
-            <img alt="" class="whitePanel" src="assets/panels/dino.png">
+            <img alt="" class="whitePanel" src="assets/panels/dino.png" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')">
           </div>
           <div>
             <p class="panelHeader">Chrome Dino script</p>
@@ -89,13 +88,11 @@
           </div>
         </div>
       </section>
-    </div>
     <h3 class="rowHeader">Experience</h3>
-    <div class="rowHeader">
-      <section class="row">
-        <div class="item" onclick="panelNav('https://www.bet365.com/#/HO/')">
+      <section class="row rowHeader">
+        <div class="item">
           <div class="panel bet365Panel">
-            <div class="bet365"></div>
+            <div class="bet365" onclick="panelNav('https://www.bet365.com/#/HO/')"></div>
           </div>
           <div>
             <p class="panelHeader">bet365</p>
@@ -119,12 +116,11 @@
           </div>
         </div>
       </section>
-    </div>
     <div class="rowHeader">
-      <section class="row">
-        <div class="item" onclick="panelNav('https://www.fdmgroup.com/')">
+      <section class="row rowHeader">
+        <div class="item">
           <div class="panel">
-            <img class="panel fdm" src="assets/panels/fdm.jpg" loading="lazy" alt="FDM Group Logo" width="283" height="213">
+            <img class="panel fdm" src="assets/panels/fdm.jpg" loading="lazy" alt="FDM Group Logo" width="283" height="213" onclick="panelNav('https://www.fdmgroup.com/')">
           </div>
           <div>
             <p class="panelHeader">FDM Group</p>
@@ -149,11 +145,10 @@
       </section>
     </div>
     <h3 class="rowHeader">Education</h3>
-    <div class="rowHeader">
-      <section class="row">
-        <div class="item" onclick="panelNav('https://www.mmu.ac.uk/')">
+      <section class="row rowHeader">
+        <div class="item">
           <div class="panel ">
-            <img class="whitePanel" src="assets/panels/mmu.png" loading="lazy" alt="MMU logo" width="200" height="110">
+            <img class="whitePanel" src="assets/panels/mmu.png" loading="lazy" alt="MMU logo" width="200" height="110" onclick="panelNav('https://www.mmu.ac.uk/')">
           </div>
           <div>
             <p class="panelHeader">BSc Biology</p>
@@ -161,9 +156,9 @@
             <p class="panelDescription">First class honours</p>
           </div>
         </div>
-        <div class="item" onclick="panelNav('https://northcoders.com/')">
+        <div class="item">
           <div class="panel  northCodersCenter">
-            <img class="panel" src="assets/panels/northCoders.png" loading="lazy" alt="northCoders logo" width="200">
+            <img class="panel" src="assets/panels/northCoders.png" loading="lazy" alt="northCoders logo" width="200" onclick="panelNav('https://northcoders.com/')">
           </div>
           <div>
             <p class="panelHeader"> Ignite Course</p>
@@ -172,13 +167,11 @@
           </div>
         </div>
       </section>
-    </div>
     <h3 class="rowHeader">Successes</h3>
-    <div class="rowHeader">
-      <section class="row">
-        <div class="item" onclick="panelNav('https://www.empiregrapplingevents.com/')">
-          <div class="panel ">
-            <img class="whitePanel" src="assets/panels/empire.png" loading="lazy" alt="northCoders logo" width="200" height="110">
+      <section class="row rowHeader">
+        <div class="item" >
+          <div class="panel">
+            <img class="whitePanel" src="assets/panels/empire.png" loading="lazy" alt="northCoders logo" width="200" height="110" onclick="panelNav('https://www.empiregrapplingevents.com/')">
           </div>
           <div>
             <p class="panelHeader">Empire International Open</p>
@@ -186,9 +179,9 @@
             <p class="panelDescription">Gold</p>
           </div>
         </div>
-        <div class="item" onclick="panelNav('https://www.royalnavy.mod.uk/our-organisation/bases-and-stations/training-establishments/university-royal-naval-units')">
+        <div class="item">
           <div class="navyPanel">
-            <img alt="" class="whitePanel" loading="lazy" src="assets/panels/navy.png">
+            <img alt="" class="whitePanel" loading="lazy" src="assets/panels/navy.png" onclick="panelNav('https://www.royalnavy.mod.uk/our-organisation/bases-and-stations/training-establishments/university-royal-naval-units')">
           </div>
           <div>
             <div>
@@ -199,13 +192,11 @@
           </div>
         </div>
       </section>
-    </div>
     <h3 class="rowHeader">Certificates</h3>
-    <div class="rowHeader">
-      <section class="row">
-        <div class="item" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/responsive-web-design')">
+      <section class="row rowHeader">
+        <div class="item">
           <div class="fccPanel navyPanel">
-            <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110">
+            <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/responsive-web-design')">
           </div>
           <div>
             <p class="panelHeader">freeCodeCamp</p>
@@ -213,9 +204,9 @@
             <p class="panelDescription">Completion of the course representing around 300hrs work</p>
           </div>
         </div>
-        <div class="item" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/javascript-algorithms-and-data-structures')">
+        <div class="item">
           <div class="fccPanel navyPanel">
-            <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110">
+            <img class="whitePanel" src="assets/panels/fcc.jpg" loading="lazy" alt="freeCodeCamp logo" width="200" height="110" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/javascript-algorithms-and-data-structures')">
           </div>
           <div>
             <p class="panelHeader">freeCodeCamp</p>
@@ -223,7 +214,6 @@
             <p class="panelDescription">Completion of the course representing around 300hrs work</p>
           </div>
         </div>
-      </div>
     </section>
   </main>
 </body>
