@@ -14,6 +14,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block
 }
 
+html { 
+    height: 100%;
+    overflow: auto;
+}
+
 body {
     line-height: 1;
     overflow: auto;
@@ -24,9 +29,9 @@ ol,ul {
     list-style: none;
 }
 
-html { 
-    height: 100%;
-    overflow: auto;
+a {
+    text-decoration: none;
+    color: #787878;
 }
 
 /* ------------------------- CSS RESET ------------------------- */
@@ -151,11 +156,6 @@ html {
 .inner {
     padding: 40% 8% 8% 0;
     height: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #787878;
 }
 
 .iconify {
@@ -402,6 +402,7 @@ a {
 }
 
 @media screen and (max-width: 830px) {
+
     .topBar, .middleBar, .bottomBar {
         width: 80px;
         height: 5px;
