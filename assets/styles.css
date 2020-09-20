@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ------------------------- CSS RESET ------------------------- */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,main,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
     margin: 0;
@@ -7,7 +14,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font: inherit;
     vertical-align: baseline;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -113,23 +121,29 @@ a {
     height: 5px;
     background-color: #fff;
     margin: 15px 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
 .burgerOpenToggle .topBar {
     -webkit-transform: rotate(23deg);
-    transform: rotate(23deg);
+    -ms-transform: rotate(23deg);
+        transform: rotate(23deg);
 }
 
 .burgerOpenToggle .middleBar {opacity: 0;}
 
 .burgerOpenToggle .bottomBar {
     -webkit-transform: rotate(-23deg);
-    transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+        transform: rotate(-23deg);
 }
 
 /* Ensure the text and nav items come in on opacity */
 .burgerOpenToggle .burgerHeader {
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.5s;
     opacity: 1;
@@ -149,7 +163,6 @@ a {
 .noDrag {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -460,12 +473,14 @@ a {
 
     .burgerOpenToggle .topBar {
         -webkit-transform: rotate(30deg);
-        transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
     }
     
     .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-30deg);
-        transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
     }
 }
 
@@ -510,12 +525,14 @@ a {
 
     .burgerOpenToggle .topBar {
         -webkit-transform: rotate(28deg);
-        transform: rotate(28deg);
+        -ms-transform: rotate(28deg);
+            transform: rotate(28deg);
     }
     
     .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-28deg);
-        transform: rotate(-28deg);
+        -ms-transform: rotate(-28deg);
+            transform: rotate(-28deg);
     }
 }
 
@@ -542,12 +559,14 @@ a {
     
     .burgerOpenToggle .topBar {
         -webkit-transform: rotate(23deg);
-        transform: rotate(23deg);
+        -ms-transform: rotate(23deg);
+            transform: rotate(23deg);
     }
     
     .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-23deg);
-        transform: rotate(-23deg);
+        -ms-transform: rotate(-23deg);
+            transform: rotate(-23deg);
     }
 }
 
@@ -639,12 +658,14 @@ a {
 
     .burgerOpenToggle .topBar {
         -webkit-transform: rotate(21deg);
-        transform: rotate(21deg);
+        -ms-transform: rotate(21deg);
+            transform: rotate(21deg);
     }
     
     .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-21deg);
-        transform: rotate(-21deg);
+        -ms-transform: rotate(-21deg);
+            transform: rotate(-21deg);
     }
 } 
 
@@ -652,11 +673,13 @@ a {
 
     .burgerOpenToggle .topBar {
         -webkit-transform: rotate(23deg);
-        transform: rotate(23deg);
+        -ms-transform: rotate(23deg);
+            transform: rotate(23deg);
     }
     
     .burgerOpenToggle .bottomBar {
         -webkit-transform: rotate(-23deg);
-        transform: rotate(-23deg);
+        -ms-transform: rotate(-23deg);
+            transform: rotate(-23deg);
     }
 }
