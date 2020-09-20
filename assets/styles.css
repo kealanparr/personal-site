@@ -53,7 +53,7 @@ a {
 
 .socialIcon {
     display: inline;
-    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .iconLink::before {
@@ -455,7 +455,7 @@ a {
     }
 
     .header {
-        height: 310px;
+        height: 350px;
     }
 
     .burgerOpenToggle .topBar {
@@ -521,10 +521,6 @@ a {
 
 @media screen and (max-width: 570px) {
    
-    .socialIcon {
-        margin-right: 0;
-    }
-
     .intro {
         font-size: 25px;
 
