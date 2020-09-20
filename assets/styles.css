@@ -241,10 +241,6 @@ a {
     background-color: #000b40;
 }
 
-#fccPanel {
-    background-color: #006401;
-}
-
 .position {
     font-size: 18px;
     width: 100%;
@@ -293,6 +289,7 @@ a {
 }
 
 .bet365 {
+    display: block;
     background: url(panels/bet365.svg);
     width: 70%;
     height: 100%;
@@ -682,4 +679,9 @@ a {
         -ms-transform: rotate(-23deg);
             transform: rotate(-23deg);
     }
+}
+
+/* Moved to the bottom, to maximise its specificity, and ensure the background color gets applied */
+.fccPanel {
+    background-color: #006401;
 }
