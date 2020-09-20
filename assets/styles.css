@@ -44,6 +44,12 @@ a {
 
 /* ------------------------- CSS RESET ------------------------- */
 
+/* Accesability checks and W3 best practices is to include a header nested inside the section tag  */
+/* But it looks quite ugly. So keep it there for screen readers, but hide it for sighted people */
+.screenReaderAccessibility {
+    display: none;
+}
+
 .mmu, .fcc, .empire {
     width: 200px;
     height: 110px;
