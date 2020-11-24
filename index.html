@@ -1,218 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Kealan Parr</title>
-  <link rel="icon" type="image/png" href="assets/misc/icon.svg" sizes="16x16">
-  <link href="assets/styles.css" rel="stylesheet">
-  <script async src="assets/index.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Kealan Parr</title>
+		<link rel="icon" type="image/png" href="assets/misc/icon.svg" sizes="16x16">
+		<link href="assets/styles.css" rel="stylesheet">
+		<script async src="assets/index.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
 
-<!-- I ideally would like to call this about.html, but Netlify need a file to be called index.html 🤔🤔🤔 -->
-<body onload="window.scrollTo(0,0);">
-  <div class="header">
-    <div class="burgerContainer" onclick="burgerNav(this)">
-      <div class="topBar"></div>
-      <div class="middleBar"></div>
-      <div class="bottomBar"></div>
-    </div>
-    <ul class="burgerNavHeader">
-      <li class="burgerHeader">
-        <a class="burgerNav" href="https://kealanparr.dev/">Blog</a>
-      </li>
-    </ul>
-    <header class="inner noDrag">
-      <img src="assets/misc/kealan.jpg" alt="Headshot of Kealan" class="headshot">
-      <h1 class="intro">Hi, I'm Kealan Parr.</h1>
-      <div class="contact">
-        <ul>
-          <!-- Email-->
-          <li class="socialIcon">
-            <a class="email iconLink" href="mailto:kea_parr@hotmail.co.uk" target="_blank"></a>
-          </li>
-          <!-- CV-->
-          <li class="socialIcon">
-            <a class="cv iconLink" href="assets/misc/KealanParr-CV.pdf" target="_blank"></a>
-          </li>
-          <!-- Twitter-->
-          <li class="socialIcon">
-            <a class="twitter iconLink" href="https://twitter.com/kealanparr" target="_blank"></a>
-          </li>
-          <!-- GitHub-->
-          <li class="socialIcon">
-            <a class="github iconLink" href="https://github.com/AnonRobot" target="_blank"></a>
-          </li>
-          <!-- CodeWars-->
-          <li class="socialIcon">
-            <a class="codewars iconLink" href="https://www.codewars.com/users/KeaParr" target="_blank"></a>
-          </li>
-          <!-- LeetCode-->
-          <li class="socialIcon">
-            <a class="leetcode iconLink" href="https://leetcode.com/anonprogramman/" target="_blank"></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-  </div>
-  <nav class="navContainer">
-    <ul>
-      <li class="navHeader">
-        <a class="nav" href="https://kealanparr.dev/">
-          Blog
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <main class="content">
-    <h2 class="workStatement">Software Engineer working on mobile, web and iOS.</h2>
-    <h3 class="rowHeader">Recent work</h3>
-    <section class="row"><h6 class="screenReaderAccessibility">Recent work</h6>
-      <div class="item">
-        <div class="panel">
-          <img class="logo" src="assets/panels/pathfinders.jpg" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')" alt="A grid depicting a path finding algorithm">
-        </div>
-        <div>
-          <p class="panelHeader">Grid based algorithms.</p>
-          <p class="panelDescription">I visualised Conway's Game of Life & implemented two path finding algorithms.</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="panel">
-          <img class="logo" src="assets/panels/dino.png" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')" alt="The Chrome Dino icon">
-        </div>
-        <div>
-          <p class="panelHeader">Chrome Dino script</p>
-          <p class="panelDescription">A basic automation script I made for the chrome dino offline game</p>
-        </div>
-      </div>
-    </section>
-    <h3 class="rowHeader">Experience</h3>
-      <section class="row"><h6 class="screenReaderAccessibility">Experience</h6>
-        <div class="item">
-          <div class="panel">
-            <!-- Has to a div as we are using background property -->
-            <span class="bet365" onclick="panelNav('https://www.bet365.com/#/HO/')" role="img" aria-label="bet365 logo"></span>
-          </div>
-          <div>
-            <p class="panelHeader">bet365</p>
-            <p class="position">Software Engineer</p>
-            <p class="panelDescription">Talented software developer, delivering projects on the mobile, web and iOS
-              app products. Entrusted with out of hours on-call duties, and mentoring juniors, working in a high
-              pressure environment.</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="panel">
-            <img class="logo" src="assets/panels/kite.png" alt="Kite Apparel logo">
-          </div>
-          <div>
-            <p class="panelHeader">Kite Apparel</p>
-            <p class="position">Free-lance Web developer</p>
-            <p class="panelDescription">Produced a website, with 40 product pages from a customers specification.
-              Worked collaboratively with a client to understand their needs; successfully created their site. Gained
-              the ability to be incredibly accurate, as this project was completed alone. Delivering on time and on
-              budget.</p>
-          </div>
-        </div>
-      </section>
-      <section class="row"><h6 class="screenReaderAccessibility">Experience</h6>
-        <div class="item">
-          <div class="panel">
-            <img class="logo fdm" src="assets/panels/fdm.jpg" loading="lazy" onclick="panelNav('https://www.fdmgroup.com/')" alt="FDMGroup logo">
-          </div>
-          <div>
-            <p class="panelHeader">FDM Group</p>
-            <p class="position">Software Engineer Trainee</p>
-            <p class="panelDescription">Finished a comprehensive programming training course covering: SQL, UNIX, OOP
-              & C#. Received a passing grade and was immediately placed, passing all technical & business interviews
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="panel">
-            <img class="logo mmaMMU" src="assets/panels/mmaMMU.png" loading="lazy" alt="An image of an MMA glove" >
-          </div>
-          <div>
-            <p class="panelHeader">Manchester</p>
-            <p class="position">Various Volunteering Roles</p>
-            <p class="panelDescription">Various volunteering roles from teaching an MMA class, reading to
-              disadvantaged children, tree planting & library work. As a reading volunteer some children jumped two
-              reading years in six months, as a result of firm & fair pupil control.</p>
-          </div>
-        </div>
-      </section>
-    <h3 class="rowHeader">Education</h3>
-      <section class="row"><h6 class="screenReaderAccessibility">Education</h6>
-        <div class="item">
-          <div class="panel">
-            <img class="logo" src="assets/panels/mmu.png" loading="lazy" onclick="panelNav('https://www.mmu.ac.uk/')" alt="MMU logo">
-          </div>
-          <div>
-            <p class="panelHeader">BSc Biology</p>
-            <p class="position">Manchester Metropolitan University</p>
-            <p class="panelDescription">First class honours</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="panel" id="northCodersPanel">
-            <img class="logo" src="assets/panels/northCoders.png" loading="lazy" onclick="panelNav('https://northcoders.com/')" alt="northCoders logo">
-          </div>
-          <div>
-            <p class="panelHeader"> Ignite Course</p>
-            <p class="position">Northcoders</p>
-            <p class="panelDescription">Completion of all sessions and projects</p>
-          </div>
-        </div>
-      </section>
-    <h3 class="rowHeader">Successes</h3>
-      <section class="row"><h6 class="screenReaderAccessibility">Successes</h6>
-        <div class="item" >
-          <div class="panel">
-            <img class="logo empire" src="assets/panels/empire.png" loading="lazy" onclick="panelNav('https://www.empiregrapplingevents.com/')" alt="Empire grappling logo">
-          </div>
-          <div>
-            <p class="panelHeader">Empire International Open</p>
-            <p class="position">Predators MMA & BJJ Academy</p>
-            <p class="panelDescription">Gold</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="panel" id="navyPanel">
-            <img class="logo" src="assets/panels/navy.png" loading="lazy" onclick="panelNav('https://www.royalnavy.mod.uk/our-organisation/bases-and-stations/training-establishments/university-royal-naval-units')" alt="The Royal Navy logo">
-          </div>
-          <div>
-            <div>
-              <p class="panelHeader">Foundation Degree</p>
-              <p class="position">Management & Leadership</p>
-              <p class="panelDescription">Royal Naval Reserves - Officer Training</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    <h3 class="rowHeader">Certificates</h3>
-      <section class="row"><h6 class="screenReaderAccessibility">freeCodeCamp</h6>
-        <div class="item">
-          <div class="panel fccPanel">
-            <img class="logo fcc" src="assets/panels/fcc.jpg" loading="lazy" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/responsive-web-design')" alt="freeCodeCamp logo">
-          </div>
-          <div>
-            <p class="panelHeader">freeCodeCamp</p>
-            <p class="position">Responsive Web Design</p>
-            <p class="panelDescription">Completion of the course representing around 300hrs work</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="panel fccPanel">
-            <img class="logo fcc" src="assets/panels/fcc.jpg" loading="lazy" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/javascript-algorithms-and-data-structures')" alt="freeCodeCamp logo">
-          </div>
-          <div>
-            <p class="panelHeader">freeCodeCamp</p>
-            <p class="position">JS Algorithms and Data Structures</p>
-            <p class="panelDescription">Completion of the course representing around 300hrs work</p>
-          </div>
-        </div>
-    </section>
-  </main>
-</body>
+	<!-- I ideally would like to call this about.html, but Netlify need a file to be called index.html 🤔🤔🤔 -->
+	<body onload="window.scrollTo(0,0);">
+		<div class="header">
+			<div class="burgerContainer" onclick="burgerNav(this)">
+				<div class="topBar"></div>
+				<div class="middleBar"></div>
+				<div class="bottomBar"></div>
+			</div>
+			<ul class="burgerNavHeader">
+				<li class="burgerHeader">
+					<a class="burgerNav" href="writtings.html">Writtings</a>
+				</li>
+			</ul>
+			<header class="inner noDrag">
+				<img src="assets/misc/kealan.jpg" alt="Headshot of Kealan" class="headshot">
+				<h1 class="intro">Hi, I'm Kealan Parr.</h1>
+				<div class="contact">
+					<ul>
+						<!-- Email-->
+						<li class="socialIcon">
+							<a class="email iconLink" href="mailto:kea_parr@hotmail.co.uk" target="_blank"></a>
+						</li>
+						<!-- CV-->
+						<li class="socialIcon">
+							<a class="cv iconLink" href="assets/misc/KealanParr-CV.pdf" target="_blank"></a>
+						</li>
+						<!-- Twitter-->
+						<li class="socialIcon">
+							<a class="twitter iconLink" href="https://twitter.com/kealanparr" target="_blank"></a>
+						</li>
+						<!-- GitHub-->
+						<li class="socialIcon">
+							<a class="github iconLink" href="https://github.com/AnonRobot" target="_blank"></a>
+						</li>
+						<!-- CodeWars-->
+						<li class="socialIcon">
+							<a class="codewars iconLink" href="https://www.codewars.com/users/KeaParr" target="_blank"></a>
+						</li>
+						<!-- LeetCode-->
+						<li class="socialIcon">
+							<a class="leetcode iconLink" href="https://leetcode.com/anonprogramman/" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+			</header>
+		</div>
+		<nav class="navContainer">
+			<ul>
+				<li class="navHeader">
+					<a class="nav" href="writtings.html">Writtings</a>
+				</li>
+			</ul>
+		</nav>
+		<main class="content">
+			<h2 class="workStatement">Software Engineer working on mobile, web and iOS.</h2>
+			<h3 class="rowHeader">Recent work</h3>
+			<section class="row"><h6 class="screenReaderAccessibility">Recent work</h6>
+				<div class="item">
+					<div class="panel">
+						<img class="logo" src="assets/panels/pathfinders.jpg" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/path-finder-js/blob/master/PathFinder.js')" alt="A grid depicting a path finding algorithm">
+					</div>
+					<div>
+						<p class="panelHeader">Grid based algorithms.</p>
+						<p class="panelDescription">I visualised Conway's Game of Life & implemented two path finding algorithms.</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="panel">
+						<img class="logo" src="assets/panels/dino.png" onclick="panelNav('https://github.com/AnonymousRepositoryStuff/Chrome-Dino-JS-script')" alt="The Chrome Dino icon">
+					</div>
+					<div>
+						<p class="panelHeader">Chrome Dino script</p>
+						<p class="panelDescription">A basic automation script I made for the chrome dino offline game</p>
+					</div>
+				</div>
+			</section>
+			<h3 class="rowHeader">Experience</h3>
+				<section class="row"><h6 class="screenReaderAccessibility">Experience</h6>
+					<div class="item">
+						<div class="panel">
+							<!-- Has to a div as we are using background property -->
+							<span class="bet365" onclick="panelNav('https://www.bet365.com/#/HO/')" role="img" aria-label="bet365 logo"></span>
+						</div>
+						<div>
+							<p class="panelHeader">bet365</p>
+							<p class="position">Software Engineer</p>
+							<p class="panelDescription">Talented software developer, delivering projects on the mobile, web and iOS
+								app products. Entrusted with out of hours on-call duties, and mentoring juniors, working in a high
+								pressure environment.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="panel">
+							<img class="logo" src="assets/panels/kite.png" alt="Kite Apparel logo">
+						</div>
+						<div>
+							<p class="panelHeader">Kite Apparel</p>
+							<p class="position">Free-lance Web developer</p>
+							<p class="panelDescription">Produced a website, with 40 product pages from a customers specification.
+								Worked collaboratively with a client to understand their needs; successfully created their site. Gained
+								the ability to be incredibly accurate, as this project was completed alone. Delivering on time and on
+								budget.</p>
+						</div>
+					</div>
+				</section>
+				<section class="row"><h6 class="screenReaderAccessibility">Experience</h6>
+					<div class="item">
+						<div class="panel">
+							<img class="logo fdm" src="assets/panels/fdm.jpg" loading="lazy" onclick="panelNav('https://www.fdmgroup.com/')" alt="FDMGroup logo">
+						</div>
+						<div>
+							<p class="panelHeader">FDM Group</p>
+							<p class="position">Software Engineer Trainee</p>
+							<p class="panelDescription">Finished a comprehensive programming training course covering: SQL, UNIX, OOP
+								& C#. Received a passing grade and was immediately placed, passing all technical & business interviews
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="panel">
+							<img class="logo mmaMMU" src="assets/panels/mmaMMU.png" loading="lazy" alt="An image of an MMA glove" >
+						</div>
+						<div>
+							<p class="panelHeader">Manchester</p>
+							<p class="position">Various Volunteering Roles</p>
+							<p class="panelDescription">Various volunteering roles from teaching an MMA class, reading to
+								disadvantaged children, tree planting & library work. As a reading volunteer some children jumped two
+								reading years in six months, as a result of firm & fair pupil control.</p>
+						</div>
+					</div>
+				</section>
+			<h3 class="rowHeader">Education</h3>
+				<section class="row"><h6 class="screenReaderAccessibility">Education</h6>
+					<div class="item">
+						<div class="panel">
+							<img class="logo" src="assets/panels/mmu.png" loading="lazy" onclick="panelNav('https://www.mmu.ac.uk/')" alt="MMU logo">
+						</div>
+						<div>
+							<p class="panelHeader">BSc Biology</p>
+							<p class="position">Manchester Metropolitan University</p>
+							<p class="panelDescription">First class honours</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="panel" id="northCodersPanel">
+							<img class="logo" src="assets/panels/northCoders.png" loading="lazy" onclick="panelNav('https://northcoders.com/')" alt="northCoders logo">
+						</div>
+						<div>
+							<p class="panelHeader"> Ignite Course</p>
+							<p class="position">Northcoders</p>
+							<p class="panelDescription">Completion of all sessions and projects</p>
+						</div>
+					</div>
+				</section>
+			<h3 class="rowHeader">Successes</h3>
+				<section class="row"><h6 class="screenReaderAccessibility">Successes</h6>
+					<div class="item" >
+						<div class="panel">
+							<img class="logo empire" src="assets/panels/empire.png" loading="lazy" onclick="panelNav('https://www.empiregrapplingevents.com/')" alt="Empire grappling logo">
+						</div>
+						<div>
+							<p class="panelHeader">Empire International Open</p>
+							<p class="position">Predators MMA & BJJ Academy</p>
+							<p class="panelDescription">Gold</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="panel" id="navyPanel">
+							<img class="logo" src="assets/panels/navy.png" loading="lazy" onclick="panelNav('https://www.royalnavy.mod.uk/our-organisation/bases-and-stations/training-establishments/university-royal-naval-units')" alt="The Royal Navy logo">
+						</div>
+						<div>
+							<div>
+								<p class="panelHeader">Foundation Degree</p>
+								<p class="position">Management & Leadership</p>
+								<p class="panelDescription">Royal Naval Reserves - Officer Training</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			<h3 class="rowHeader">Certificates</h3>
+				<section class="row"><h6 class="screenReaderAccessibility">freeCodeCamp</h6>
+					<div class="item">
+						<div class="panel fccPanel">
+							<img class="logo fcc" src="assets/panels/fcc.jpg" loading="lazy" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/responsive-web-design')" alt="freeCodeCamp logo">
+						</div>
+						<div>
+							<p class="panelHeader">freeCodeCamp</p>
+							<p class="position">Responsive Web Design</p>
+							<p class="panelDescription">Completion of the course representing around 300hrs work</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="panel fccPanel">
+							<img class="logo fcc" src="assets/panels/fcc.jpg" loading="lazy" onclick="panelNav('https://www.freecodecamp.org/certification/kealan-parr/javascript-algorithms-and-data-structures')" alt="freeCodeCamp logo">
+						</div>
+						<div>
+							<p class="panelHeader">freeCodeCamp</p>
+							<p class="position">JS Algorithms and Data Structures</p>
+							<p class="panelDescription">Completion of the course representing around 300hrs work</p>
+						</div>
+					</div>
+			</section>
+		</main>
+	</body>
+</html>

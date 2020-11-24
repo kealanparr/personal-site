@@ -7,343 +7,418 @@
 
 /* ------------------------- CSS RESET ------------------------- */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,main,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-    display: block
+  display: block
 }
 
 html { 
-    height: 100%;
-    overflow: auto;
+  height: 100%;
+  overflow: auto;
 }
 
 body {
-    line-height: 1;
-    overflow: auto;
-    height: 100%;
+  line-height: 1;
+  overflow: auto;
+  height: 100%;
 }
 
 ol,ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: #787878;
+  text-decoration: none;
+  color: #787878;
 }
 
 /* ------------------------- CSS RESET ------------------------- */
 
+/* ============================================================ 
+ index.html 
+ ============================================================ */
+
 /* Accesability checks and W3 best practices is to include a header nested inside the section tag  */
 /* But it looks quite ugly. So keep it there for screen readers, but hide it for sighted people */
 .screenReaderAccessibility {
-    display: none;
+  display: none;
 }
 
 .mmu, .fcc, .empire {
-    width: 200px;
-    height: 110px;
+  width: 200px;
+  height: 110px;
 }
 
 .fdm, .mmaMMU {
-    border-radius: 10%;
-    width: 283px;
-    height: 213px;
+  border-radius: 10%;
+  width: 283px;
+  height: 213px;
 }
 
 .contact {
-    float: right;
+  float: right;
 }
 
 .socialIcon {
-    display: inline;
-    margin-right: 18px;
+  display: inline;
+  margin-right: 18px;
 }
 
 .iconLink::before {
-    content: "";
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
 }
 
 .email::before {
-    background-image: url(socialIcons/email.svg);
+  background-image: url(socialIcons/email.svg);
 }
 
 .cv::before {
-    background-image: url(socialIcons/cv.svg);
+  background-image: url(socialIcons/cv.svg);
 }
 
 .twitter::before {
-    background-image: url(socialIcons/twitter.svg);
+  background-image: url(socialIcons/twitter.svg);
 }
 
 .github::before {
-    background-image: url(socialIcons/github.svg);
+  background-image: url(socialIcons/github.svg);
 }
 
 .codewars::before {
-    background-image: url(socialIcons/codewars.svg);
+  background-image: url(socialIcons/codewars.svg);
 }
 
 .leetcode::before {
-    background-image: url(socialIcons/leetcode.svg);
+  background-image: url(socialIcons/leetcode.svg);
 }
 
 .headshot {
-    width: 35%;
-    float: right;
-    border-radius: 50%;
-    margin-bottom: 5%;
-    min-width: 100px;
+  width: 35%;
+  float: right;
+  border-radius: 50%;
+  margin-bottom: 5%;
+  min-width: 100px;
 }
 
 .intro {
-    color: #fff;
-    font-size: 2em;
-    float: right;
-    margin-bottom: 5%;
-    text-align: right;
-    width: 100%;
+  color: #fff;
+  font-size: 2em;
+  float: right;
+  margin-bottom: 5%;
+  text-align: right;
+  width: 100%;
 }
 
 /* PASSED QA */
 
 .topBar, .middleBar, .bottomBar {
-    width: 100px;
-    height: 5px;
-    background-color: #fff;
-    margin: 15px 0;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+  width: 100px;
+  height: 5px;
+  background-color: #fff;
+  margin: 15px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .burgerOpenToggle .topBar {
-    -webkit-transform: rotate(23deg);
-    -ms-transform: rotate(23deg);
-        transform: rotate(23deg);
+  -webkit-transform: rotate(23deg);
+  -ms-transform: rotate(23deg);
+  		transform: rotate(23deg);
 }
 
-.burgerOpenToggle .middleBar {opacity: 0;}
+.burgerOpenToggle .middleBar {
+	opacity: 0;
+}
 
 .burgerOpenToggle .bottomBar {
-    -webkit-transform: rotate(-23deg);
-    -ms-transform: rotate(-23deg);
-        transform: rotate(-23deg);
+  -webkit-transform: rotate(-23deg);
+  -ms-transform: rotate(-23deg);
+      transform: rotate(-23deg);
 }
 
 /* Ensure the text and nav items come in on opacity */
 .burgerOpenToggle .burgerHeader {
-    -webkit-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.5s;
-    opacity: 1;
-    pointer-events: all;
+	-webkit-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.5s;
+	opacity: 1;
+	pointer-events: all;
 }
 
 .burgerHeader {
-    opacity: 0;
-    pointer-events: none;
-    display: inline-block;
-    margin-right: 5%;
+	opacity: 0;
+	pointer-events: none;
+	display: inline-block;
+	margin-right: 5%;
 }
 
 /* PASSED QA */
 
 /* I included this because I hate on a click and drag everything highlights blue. Personal pref, but it drives me doolally */
 .noDrag {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .header {
-    position: fixed;
-    width: 35%;
-    height: 100%;
-    opacity: 0.95;
-    background-image: url(misc/forest.jpg);
-    background-size: 100% 100%;
+	position: fixed;
+	width: 35%;
+	height: 100%;
+	opacity: 0.95;
+	background-image: url(misc/forest.jpg);
+	background-size: 100% 100%;
 }
 
 .inner {
-    padding: 40% 8% 8% 0;
-    height: 100%;
+	padding: 40% 8% 8% 0;
+	height: 100%;
 }
 
 .iconify {
-    width: 40px;
-    height: 40px;
-    color: #fff;
+	width: 40px;
+	height: 40px;
+	color: #fff;
 }
 
 .navContainer {
-    margin-left: 38%;
+  margin-left: 38%;
 }
 
 .content {
-    position: relative;
-    display: block;
-    margin-left: 35%;
-    padding-left: 5%;
-    width: 65%;
+	position: relative;
+	display: block;
+	margin-left: 35%;
+	padding-left: 5%;
+	width: 65%;
 }
 
 .workStatement {
-    font-size: 2em;
-    color: #013220 ;
-    border-bottom: solid 2px #efefef;
-    padding: 5% 0;
-    margin: 5% 0;
-    opacity: 0.95;
+	font-size: 2em;
+	color: #013220 ;
+	border-bottom: solid 2px #efefef;
+	padding: 5% 0;
+	margin: 5% 0;
+	opacity: 0.95;
 }
 
 .row {
-    font-size: 3.3em;
-    margin-bottom: 50px;
-    width: 100%;
-    float: left;
+	font-size: 3.3em;
+	margin-bottom: 50px;
+	width: 100%;
+	float: left;
 }
 
 .rowHeader {
-    font-size: 3.3em;
-    color: #013220;
-    margin-bottom: 50px;
-    width: 100%;
-    float: left;
+	font-size: 3.3em;
+	color: #013220;
+	margin-bottom: 50px;
+	width: 100%;
+	float: left;
 }
 
 .logo {
-    width: 200px;
-    height: 190px;
-    margin-top: 2%;
-    margin-left: 14%;
+	width: 200px;
+	height: 190px;
+	margin-top: 2%;
+	margin-left: 14%;
 }
 
 .item {
-    vertical-align: top;
-    width: 45%;
-    display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	display: inline-block;
 }
 
 #navyPanel {
-    background-color: #000b40;
+	background-color: #000b40;
 }
 
 .position {
-    font-size: 18px;
-    width: 100%;
-    display: block;
-    font-weight: bold;
+	font-size: 18px;
+	width: 100%;
+	display: block;
+	font-weight: bold;
 }
 
 .burgerNavHeader {
-    display: none;
+  display: none;
 }
 
 .rowTwo {
-    margin-top: 10%;
-    margin-left: 38%;
+	margin-top: 10%;
+	margin-left: 38%;
 }
 
 .panelDescription {
-    font-size: 20px;
-    width: 100%;
-    vertical-align: top;
-    padding-right: 3%;
-    display: inline-block;
+	font-size: 20px;
+	width: 100%;
+	vertical-align: top;
+	padding-right: 3%;
+	display: inline-block;
 }
 
-
-
 .panel {
-    background-color: black;
-    height: 200px;
-    width: 270px;
-    border-radius: 10%;
-    display: block;
-    cursor: pointer;
-    color: #013220;
+	background-color: black;
+	height: 200px;
+	width: 270px;
+	border-radius: 10%;
+	display: block;
+	cursor: pointer;
+	color: #013220;
 }
 
 .northCodersPanel {
-    background-color: black;
-    height: 200px;
-    width: 270px;
-    border-radius: 10%;
-    display: block;
-    cursor: pointer;
-    color: #013220;
-    text-align: center;
+	background-color: black;
+	height: 200px;
+	width: 270px;
+	border-radius: 10%;
+	display: block;
+	cursor: pointer;
+	color: #013220;
+	text-align: center;
 }
 
 .bet365 {
-    display: block;
-    background: url(panels/bet365.svg);
-    width: 70%;
-    height: 100%;
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    margin: auto;
+	display: block;
+	background: url(panels/bet365.svg);
+	width: 70%;
+	height: 100%;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin: auto;
 }
 
 
 .panelHeader {
-    padding-top: 5%;
-    display: block;
-    font-size: 22px;
-    width: 100%;
-    font-weight: bold;
+	padding-top: 5%;
+	display: block;
+	font-size: 22px;
+	width: 100%;
+	font-weight: bold;
 }
 
 .nav {
-    font-size: 50px;
-    color: #013220 ;
-    display: inline-block;
-    margin-bottom: 50px;
-    margin-top: 15%;
+	font-size: 50px;
+	color: #013220 ;
+	display: inline-block;
+	margin-bottom: 50px;
+	margin-top: 15%;
 }
 
 .navHeader {
-    display: inline-block;
-    margin-right: 5%;
+	display: inline-block;
+	margin-right: 5%;
 }
 
 .burgerNav {
-    color: #fff;
-    display: inline-block;
-    font-size: 50px;
-    padding-bottom: 15%;
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+  padding-bottom: 15%;
 }
 
 .burgerContainer {
-    display: none;
-    pointer-events: none;
+  display: none;
+  pointer-events: none;
 }
 
 .position, .panelHeader {
-    padding-bottom: 3%;
+  padding-bottom: 3%;
 }
 
+/* ============================================================ 
+ writtings.html 
+ ============================================================ */
+
+.link {
+	margin-top: 20px;
+}
+
+.archiveContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.archive {
+	width: 100%;
+	max-width: 700px;
+	flex-wrap: wrap;
+}
+
+.article {
+	margin-left: 10%;
+	line-height: 30px;
+}
+
+.articles {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10%;
+}
+
+.home {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	cursor: pointer;
+	color: #013220;
+	width: 100%;
+	height: 50px;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.arrow {
+  font-size: 30px;
+}
+
+.arrowText {
+  font-size: 22px;
+}
+
+.tagLine {
+	font-size: 40px;
+	height: 100%;
+	width: 100%;
+}
+
+.year {
+  display: block;
+  font-size: 40px;
+	height: 50px;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.month {
+  display: block;
+  font-size: 40px;
+	height: 50px;
+	width: 100%;
+	font-size: 28px;
+	margin-top: 25px;
+}
 
 /* ============================================================ 
  MEDIA QUERIES 
@@ -355,339 +430,338 @@ a {
 
 @media screen and (max-width: 1180px) {
 
-    .burgerNavHeader {
-        display: inline-block;
-        width: 65%;
-        vertical-align: top;
-        margin-top: 7%;
-        margin-left: 4%;
-    }
+	.burgerNavHeader {
+		display: inline-block;
+		width: 65%;
+		vertical-align: top;
+		margin-top: 7%;
+		margin-left: 4%;
+	}
 
-    .burgerContainer {
-        display: inline-block;
-        margin-top: 6%;
-        margin-left: 5%;
-        cursor: pointer;
-        pointer-events: all;
-    }
+	.burgerContainer {
+		display: inline-block;
+		margin-top: 6%;
+		margin-left: 5%;
+		cursor: pointer;
+		pointer-events: all;
+	}
 
-    .inner {
-        padding: 0% 10% 0% 10%;
-        width: 100%;
-        height: 71%;
-    }
-    
-    .header {
-        position: relative;
-        width: 100%;
-        height: 380px; 
-    }
+	.inner {
+		padding: 0% 10% 0% 10%;
+		width: 100%;
+		height: 71%;
+	}
+	
+	.header {
+		position: relative;
+		width: 100%;
+		height: 380px;
+	}
 
-    .navContainer {
-        display: none;
-    }
+	.navContainer {
+		display: none;
+	}
 
-    .content {
-        margin-left: 3%;
-        width: 97%;
-    }
+	.content {
+		margin-left: 3%;
+		width: 97%;
+	}
 
-    .headshot {
-        width: 15%;
-        float: right;
-        border-radius: 50%;
-        margin-left: 5%;
-        margin-top: 3%;
-    }
+	.headshot {
+		width: 15%;
+		float: right;
+		border-radius: 50%;
+		margin-left: 5%;
+		margin-top: 3%;
+	}
 
-    .intro {
-        margin-top: 5%;
-        margin-bottom: 3%;
-        width: 70%;
-    }
+	.intro {
+		margin-top: 5%;
+		margin-bottom: 3%;
+		width: 70%;
+	}
 
-    .panel, .navyPanel {
-        width: 350px;
-        height: 230px;
-    }
+	.panel, .navyPanel {
+		width: 350px;
+		height: 230px;
+	}
 
-    .logo {
-        width: 240px;
-        height: 220px;
-    }
+	.logo {
+		width: 240px;
+		height: 220px;
+	}
 }
 
 @media screen and (max-width: 830px) {
 
-    .topBar, .middleBar, .bottomBar {
-        width: 80px;
-        height: 5px;
-    }
+	.topBar, .middleBar, .bottomBar {
+		width: 80px;
+		height: 5px;
+	}
 
-    .burgerNavHeader {
-        margin-top: 8.5%;
-    }
+	.burgerNavHeader {
+		margin-top: 8.5%;
+	}
 
-    .rowHeader {
-        font-size: 2em;
-    }
+	.rowHeader {
+		font-size: 2em;
+	}
 
-    .workStatement {
-        font-size: 1.6em;
-    }
-    
-    .item {
-        padding-bottom: 4%;
-    }
+	.workStatement {
+		font-size: 1.6em;
+	}
+	
+	.item {
+		padding-bottom: 4%;
+	}
 
-    .panel, .navyPanel {
-        width: 275px;
-        height: 170px;
-    }
-    
-    .logo {
-        width: 200px;
-        height: 160px;
-    }
+	.panel, .navyPanel {
+		width: 275px;
+		height: 170px;
+	}
+	
+	.logo {
+		width: 200px;
+		height: 160px;
+	}
 
-    .panelHeader {
-        font-size: 20px;
-    }
+	.panelHeader {
+		font-size: 20px;
+	}
 
-    .position {
-        font-size: 18px;
-    }
+	.position {
+		font-size: 18px;
+	}
 
-    .panelDescription {
-        font-size: 17px;
-    }
-    
-    .header {
-        height: 370px;
-    }
+	.panelDescription {
+		font-size: 17px;
+	}
+	
+	.header {
+		height: 370px;
+	}
 
-    .inner {
-        height: 40%;
-    }
+	.inner {
+		height: 40%;
+	}
 
-    .header {
-        height: 350px;
-    }
+	.header {
+		height: 350px;
+	}
 
-    .burgerOpenToggle .topBar {
-        -webkit-transform: rotate(30deg);
-        -ms-transform: rotate(30deg);
-            transform: rotate(30deg);
-    }
-    
-    .burgerOpenToggle .bottomBar {
-        -webkit-transform: rotate(-30deg);
-        -ms-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-    }
+	.burgerOpenToggle .topBar {
+		-webkit-transform: rotate(30deg);
+		-ms-transform: rotate(30deg);
+				transform: rotate(30deg);
+	}
+	
+	.burgerOpenToggle .bottomBar {
+		-webkit-transform: rotate(-30deg);
+		-ms-transform: rotate(-30deg);
+				transform: rotate(-30deg);
+	}
 }
 
 @media screen and (max-width: 670px) {
-    
-    .logo {
-        width: 150px;
-        height: 130px;
-    }
+		
+	.logo {
+		width: 150px;
+		height: 130px;
+	}
 
-    .panel, .navyPanel {
-        width: 200px;
-        height: 140px;
-    }
+	.panel, .navyPanel {
+		width: 200px;
+		height: 140px;
+	}
 
-    .rowHeader {
-        margin-bottom: 20px;
-    } 
+	.rowHeader {
+		margin-bottom: 20px;
+	} 
 
-    .panelHeader, .position, .panelDescription {
-        padding-right: 8%;
-    }
+	.panelHeader, .position, .panelDescription {
+		padding-right: 8%;
+	}
 
-    .workStatement {
-        font-size: 20px;
-    }
+	.workStatement {
+		font-size: 20px;
+	}
 
-    .intro, .contact {
-        float: none;
-        text-align: right;
-    }
+	.intro, .contact {
+		float: none;
+		text-align: right;
+	}
 
-    .socialIcon {
-        margin-right: 4px;
-    }
+	.socialIcon {
+		margin-right: 4px;
+	}
 
-    .intro {
-        font-size: 29px;
-        padding-top: 6%;
-        width: 100%;
-    }
+	.intro {
+		font-size: 29px;
+		padding-top: 6%;
+		width: 100%;
+	}
 
-    .burgerOpenToggle .topBar {
-        -webkit-transform: rotate(28deg);
-        -ms-transform: rotate(28deg);
-            transform: rotate(28deg);
-    }
-    
-    .burgerOpenToggle .bottomBar {
-        -webkit-transform: rotate(-28deg);
-        -ms-transform: rotate(-28deg);
-            transform: rotate(-28deg);
-    }
+	.burgerOpenToggle .topBar {
+		-webkit-transform: rotate(28deg);
+		-ms-transform: rotate(28deg);
+				transform: rotate(28deg);
+	}
+	
+	.burgerOpenToggle .bottomBar {
+		-webkit-transform: rotate(-28deg);
+		-ms-transform: rotate(-28deg);
+				transform: rotate(-28deg);
+	}
 }
 
 @media screen and (max-width: 570px) {
-   
-    .intro {
-        font-size: 25px;
+	
+	.intro {
+		font-size: 25px;
+	}
 
-    }
+	.topBar, .middleBar, .bottomBar {
+		width: 50px;
+		margin: 5px 0;
+	}
 
-    .topBar, .middleBar, .bottomBar {
-        width: 50px;
-        margin: 5px 0;
-    }
+	.inner {
+		padding: 0 10% 0 0;
+	}
 
-    .inner {
-        padding: 0 10% 0 0;
-    }
+	.headshot {
+		margin-bottom: 2%;
+	}
 
-    .headshot {
-        margin-bottom: 2%;
-    }
-
-    
-    .burgerOpenToggle .topBar {
-        -webkit-transform: rotate(23deg);
-        -ms-transform: rotate(23deg);
-            transform: rotate(23deg);
-    }
-    
-    .burgerOpenToggle .bottomBar {
-        -webkit-transform: rotate(-23deg);
-        -ms-transform: rotate(-23deg);
-            transform: rotate(-23deg);
-    }
+	
+	.burgerOpenToggle .topBar {
+		-webkit-transform: rotate(23deg);
+		-ms-transform: rotate(23deg);
+				transform: rotate(23deg);
+	}
+	
+	.burgerOpenToggle .bottomBar {
+		-webkit-transform: rotate(-23deg);
+		-ms-transform: rotate(-23deg);
+				transform: rotate(-23deg);
+	}
 }
 
 @media screen and (max-width: 490px) {
 
-    .item {
-        display: block;
-        width: 100%;
-    }
+	.item {
+		display: block;
+		width: 100%;
+	}
 
-    .panel, .navyPanel {
-        height: 250px;
-        width: 96%;
-        margin: auto;
-    }
+	.panel, .navyPanel {
+		height: 250px;
+		width: 96%;
+		margin: auto;
+	}
 
-    .logo {
-        width: 90%;
-        height: 90%;
-        margin-top: 3%;
-        margin-left: 5%;
-    }
+	.logo {
+		width: 90%;
+		height: 90%;
+		margin-top: 3%;
+		margin-left: 5%;
+	}
 
-    .content {
-        margin-left: 0%;
-        width: 100%;
-        padding-left: 0;
-    }
+	.content {
+		margin-left: 0%;
+		width: 100%;
+		padding-left: 0;
+	}
 
-    .workStatement {
-        padding-left: 5%;
-    }
+	.workStatement {
+		padding-left: 5%;
+	}
 
-    .panelDescription {
-        padding-right: 2%;
-        font-size: 20px;
-        padding-left: 3%;
-    }
+	.panelDescription {
+		padding-right: 2%;
+		font-size: 20px;
+		padding-left: 3%;
+	}
 
-    .panelHeader {
-        padding-right: 0;
-        padding-left: 3%;
-        font-size: 25px;
-    }
+	.panelHeader {
+		padding-right: 0;
+		padding-left: 3%;
+		font-size: 25px;
+	}
 
-    .rowHeader {
-        padding-left: 3%;
-    }
+	.rowHeader {
+		padding-left: 3%;
+	}
 
-    .position {
-        padding-left: 3%;
-    }
+	.position {
+		padding-left: 3%;
+	}
 
-    .headshot {
-        display: block;
-        margin-top: 5%;
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-        width: 30%;
-        min-width: 150px;
-    }
+	.headshot {
+		display: block;
+		margin-top: 5%;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		width: 30%;
+		min-width: 150px;
+	}
 
-    .intro {
-        display: none;
-    }
+	.intro {
+		display: none;
+	}
 
-    .inner {
-        height: 67%;
-        padding: 0 0 0 0;
-    }
+	.inner {
+		height: 67%;
+		padding: 0 0 0 0;
+	}
 
-    .contact {
-        text-align: center;
-    }
+	.contact {
+		text-align: center;
+	}
 
-    .headshot {
-        margin: 0 auto 5% auto;
-    }
+	.headshot {
+		margin: 0 auto 5% auto;
+	}
 
-    .codewars::before, .leetcode::before {
-        display: none;
-        pointer-events: none;
-    }
+	.codewars::before, .leetcode::before {
+		display: none;
+		pointer-events: none;
+	}
 
-    .socialIcon {
-        margin-right: 10px;
-    }
+	.socialIcon {
+		margin-right: 10px;
+	}
 
-    .burgerOpenToggle .topBar {
-        -webkit-transform: rotate(21deg);
-        -ms-transform: rotate(21deg);
-            transform: rotate(21deg);
-    }
-    
-    .burgerOpenToggle .bottomBar {
-        -webkit-transform: rotate(-21deg);
-        -ms-transform: rotate(-21deg);
-            transform: rotate(-21deg);
-    }
+	.burgerOpenToggle .topBar {
+		-webkit-transform: rotate(21deg);
+		-ms-transform: rotate(21deg);
+				transform: rotate(21deg);
+	}
+	
+	.burgerOpenToggle .bottomBar {
+		-webkit-transform: rotate(-21deg);
+		-ms-transform: rotate(-21deg);
+				transform: rotate(-21deg);
+	}
 } 
 
 @media screen and (max-width: 385px) {
 
-    .burgerOpenToggle .topBar {
-        -webkit-transform: rotate(23deg);
-        -ms-transform: rotate(23deg);
-            transform: rotate(23deg);
-    }
-    
-    .burgerOpenToggle .bottomBar {
-        -webkit-transform: rotate(-23deg);
-        -ms-transform: rotate(-23deg);
-            transform: rotate(-23deg);
-    }
+	.burgerOpenToggle .topBar {
+		-webkit-transform: rotate(23deg);
+		-ms-transform: rotate(23deg);
+				transform: rotate(23deg);
+	}
+	
+	.burgerOpenToggle .bottomBar {
+		-webkit-transform: rotate(-23deg);
+		-ms-transform: rotate(-23deg);
+				transform: rotate(-23deg);
+	}
 }
 
 /* Moved to the bottom, to maximise its specificity, and ensure the background color gets applied */
 .fccPanel {
-    background-color: #006401;
+	background-color: #006401;
 }
