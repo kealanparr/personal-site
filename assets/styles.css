@@ -375,7 +375,7 @@ a {
 .articles {
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 10%;
+	padding-bottom: 10%;
 }
 
 .home {
