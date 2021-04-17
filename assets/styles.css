@@ -39,7 +39,6 @@ ol,ul {
 
 a {
   text-decoration: none;
-  color: #787878;
 }
 
 /* ------------------------- CSS RESET ------------------------- */
@@ -352,10 +351,6 @@ a {
  writings.html 
  ============================================================ */
 
-.link {
-	margin-top: 20px;
-}
-
 .archiveContainer {
 	display: flex;
 	justify-content: center;
@@ -367,12 +362,12 @@ a {
 	flex-wrap: wrap;
 }
 
-.article {
+.writingHeader {
 	margin-left: 10%;
 	line-height: 30px;
 }
 
-.articles {
+.writingIntro {
 	margin-left: 5%;
 	margin-right: 5%;
 	padding-bottom: 10%;
@@ -401,23 +396,7 @@ a {
 	font-size: 40px;
 	height: 100%;
 	width: 100%;
-}
-
-.year {
-  display: block;
-  font-size: 40px;
-	height: 50px;
-	width: 100%;
-	margin-top: 40px;
-}
-
-.month {
-  display: block;
-  font-size: 40px;
-	height: 50px;
-	width: 100%;
-	font-size: 28px;
-	margin-top: 25px;
+	margin-bottom: 3%;
 }
 
 /* ============================================================ 
