@@ -242,6 +242,13 @@ a {
 	margin-left: 14%;
 }
 
+.northCodersLogo {
+	width: 245px;
+	height: 190px;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
 .item {
 	vertical-align: top;
 	width: 45%;
@@ -286,16 +293,6 @@ a {
 	color: #013220;
 }
 
-.northCodersPanel {
-	background-color: black;
-	height: 200px;
-	width: 270px;
-	border-radius: 10%;
-	display: block;
-	cursor: pointer;
-	color: #013220;
-	text-align: center;
-}
 
 .bet365 {
 	display: block;
@@ -308,7 +305,6 @@ a {
 	background-position: 50%;
 	margin: auto;
 }
-
 
 .panelHeader {
 	padding-top: 5%;
@@ -461,7 +457,7 @@ a {
 		width: 70%;
 	}
 
-	.panel, .navyPanel {
+	.panel {
 		width: 350px;
 		height: 230px;
 	}
@@ -469,6 +465,12 @@ a {
 	.logo {
 		width: 240px;
 		height: 220px;
+	}
+
+	.northCodersLogo {
+		width: 295px;
+		height: 220px;
+		margin-left: 8%;
 	}
 }
 
@@ -495,7 +497,7 @@ a {
 		padding-bottom: 4%;
 	}
 
-	.panel, .navyPanel {
+	.panel {
 		width: 275px;
 		height: 170px;
 	}
@@ -503,6 +505,12 @@ a {
 	.logo {
 		width: 200px;
 		height: 160px;
+	}
+
+	.northCodersLogo {
+		width: 240px;
+		height: 160px;
+		margin-left: 7%;
 	}
 
 	.panelHeader {
@@ -549,7 +557,12 @@ a {
 		height: 130px;
 	}
 
-	.panel, .navyPanel {
+	.northCodersLogo {
+		width: 175px;
+		height: 135px;
+	}
+
+	.panel {
 		width: 200px;
 		height: 140px;
 	}
@@ -634,13 +647,13 @@ a {
 		width: 100%;
 	}
 
-	.panel, .navyPanel {
+	.panel {
 		height: 250px;
 		width: 96%;
 		margin: auto;
 	}
 
-	.logo {
+	.logo, .northCodersLogo {
 		width: 90%;
 		height: 90%;
 		margin-top: 3%;
