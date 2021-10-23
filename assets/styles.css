@@ -236,17 +236,10 @@ a {
 }
 
 .logo {
-	width: 200px;
-	height: 190px;
-	margin-top: 2%;
-	margin-left: 14%;
-}
-
-.northCodersLogo {
-	width: 245px;
-	height: 190px;
-	margin-top: 2%;
-	margin-left: 5%;
+	width: 240px;
+	height: 175px;
+	margin-top: 5%;
+	margin-left: 7%;
 }
 
 .item {
@@ -463,14 +456,8 @@ a {
 	}
 
 	.logo {
-		width: 240px;
-		height: 220px;
-	}
-
-	.northCodersLogo {
-		width: 295px;
-		height: 220px;
-		margin-left: 8%;
+		width: 290px;
+		height: 200px;
 	}
 }
 
@@ -503,14 +490,8 @@ a {
 	}
 	
 	.logo {
-		width: 200px;
-		height: 160px;
-	}
-
-	.northCodersLogo {
-		width: 240px;
-		height: 160px;
-		margin-left: 7%;
+		width: 220px;
+		height: 150px;
 	}
 
 	.panelHeader {
@@ -553,13 +534,8 @@ a {
 @media screen and (max-width: 670px) {
 		
 	.logo {
-		width: 150px;
-		height: 130px;
-	}
-
-	.northCodersLogo {
-		width: 175px;
-		height: 135px;
+		width: 160px;
+		height: 125px;
 	}
 
 	.panel {
@@ -653,7 +629,7 @@ a {
 		margin: auto;
 	}
 
-	.logo, .northCodersLogo {
+	.logo {
 		width: 90%;
 		height: 90%;
 		margin-top: 3%;
@@ -757,4 +733,8 @@ a {
 /* Moved to the bottom, to maximise its specificity, and ensure the background color gets applied */
 .fccPanel {
 	background-color: #006401;
+}
+.audenPanel {
+	background-color: #fff;
+	border: 2px solid black;
 }
