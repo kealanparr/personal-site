@@ -222,7 +222,7 @@ a {
 
 .row {
 	font-size: 3.3em;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 	width: 100%;
 	float: left;
 }
