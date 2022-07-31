@@ -95,15 +95,11 @@ a {
 }
 
 .github::before {
-  background-image: url(socialIcons/github.svg);
+	background-image: url(socialIcons/github.svg);
 }
 
-.codewars::before {
-  background-image: url(socialIcons/codewars.svg);
-}
-
-.leetcode::before {
-  background-image: url(socialIcons/leetcode.svg);
+.linktree::before {
+	background-image: url(socialIcons/linktree.svg);
 }
 
 .headshot {
@@ -692,11 +688,6 @@ a {
 
 	.headshot {
 		margin: 0 auto 5% auto;
-	}
-
-	.codewars::before, .leetcode::before {
-		display: none;
-		pointer-events: none;
 	}
 
 	.socialIcon {
